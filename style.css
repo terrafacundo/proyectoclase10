@@ -29,6 +29,19 @@ header .navSup {
 
 header .navSup .fotoLogo{
     width:15vw;
+    animation-duration: 2s;
+    animation-name: logo;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
 }
 
 header .navSup .buscador{
@@ -44,8 +57,13 @@ header .navSup .buscador{
     height: 6vh;
     margin-right: 1vw;
     border-width: 1px;
-
     background-color: #fff;
+    transition: all 800ms;
+}
+
+.miCuenta:hover {
+    transform:scale(1.05,1.05);
+    box-shadow: -2px 2px 5px rgb(179, 177, 177);
 }
 
 header .navInf {
@@ -58,6 +76,13 @@ header .navInf {
     padding-bottom: 1.5vh;
 }
 
+header .navInf a{
+    font-size: 14px;
+    transition: all 200ms;
+}
+header .navInf a:hover{
+    font-size: 16px;
+}
 /*cuerpo entero con sus galerias*/
 main {
     background-color: rgb(184, 184, 184);
@@ -79,6 +104,23 @@ section .masVend{
     "primero segundo tercero cuarto quinto sexto"
     ;
     margin-bottom: 20vh;
+    animation-duration: 3s;
+    animation-name:aparicionGaleriaUno;
+}
+
+@keyframes aparicionGaleriaUno {
+    0%{
+        opacity: 0;
+        transform:translateX(-200px);
+    }
+    40%{
+        opacity:100;
+        transform:translateX(-20px);
+    }
+    100%{
+        opacity: 100;
+        transform:translateX(0px);
+    }
 }
 
 .tituloSeccion{
@@ -87,6 +129,7 @@ section .masVend{
     font-weight: 800;
     padding-bottom: 2vh;
     text-shadow:-1px 1px 5px gray;
+    animation-name:tituloColor;
 }
 
 .libroUno{
@@ -95,6 +138,11 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    transition: all 600ms;
+}
+
+.libroUno:hover{
+    transform:scale(1.05,1.05);
 }
 .libroDos{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -102,6 +150,10 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    transition: all 600ms;
+}
+.libroDos:hover{
+    transform:scale(1.05,1.05);
 }
 .libroTres{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -109,6 +161,11 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    animation-duration: 7s;
+    transition:all 600ms;
+}
+.libroTres:hover{
+    transform:scale(1.05,1.05);
 }
 .libroCuatro{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -116,6 +173,10 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    transition: all 600ms;
+}
+.libroCuatro:hover{
+    transform:scale(1.05,1.05);
 }
 .libroCinco{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -123,6 +184,10 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    transition: all 600ms;
+}
+.libroCinco:hover{
+    transform:scale(1.05,1.05);
 }
 .libroSeis{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -130,6 +195,10 @@ section .masVend{
     background-color: whitesmoke;
     justify-self: center;
     height: 65vh;
+    transition: all 600ms;
+}
+.libroSeis:hover{
+    transform:scale(1.05,1.05);
 }
 
 .libroUno div, .libroDos div, .libroTres div, .libroCuatro div, .libroCinco div, .libroSeis div{
@@ -142,6 +211,23 @@ section .masVend{
     grid-template-areas: 
     "tituloDos tituloDos tituloDos tituloDos tituloDos tituloDos"
     "primeroDos segundoDos terceroDos cuartoDos quintoDos sextoDos";
+    animation-name:aparicionGaleriaDos;
+    animation-duration: 4s;
+}
+
+@keyframes aparicionGaleriaDos {
+    0%{
+        opacity: 0;
+        transform:translateX(-200px);
+    }
+    40%{
+        opacity:100;
+        transform:translateX(-20px);
+    }
+    100%{
+        opacity: 100;
+        transform:translateX(0px);
+    }
 }
 
 .tituloDos{
@@ -159,24 +245,40 @@ section .masVend{
     grid-area:primeroDos;
     background-color: whitesmoke;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroUnoUno:hover{
+    transform:scale(1.05,1.05);
 }
 .libroDosDos{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
     grid-area:segundoDos;
     background-color: whitesmoke;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroDosDos:hover{
+    transform:scale(1.05,1.05);
 }
 .libroTresTres{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
     grid-area:terceroDos;
     background-color: whitesmoke;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroTresTres:hover{
+    transform:scale(1.05,1.05);
 }
 .libroCuatroCuatro{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
     grid-area:cuartoDos;
     background-color: whitesmoke;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroCuatroCuatro:hover{
+    transform:scale(1.05,1.05);
 }
 .libroCincoCinco{
     box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
@@ -184,6 +286,10 @@ section .masVend{
     background-color: whitesmoke;
     height: 65vh;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroCincoCinco:hover{
+    transform:scale(1.05,1.05);
 }
 
 .libroSextoSexto{
@@ -191,6 +297,10 @@ section .masVend{
     grid-area:sextoDos;
     background-color: whitesmoke;
     justify-self: center;
+    transition: all 600ms;
+}
+.libroSextoSexto:hover{
+    transform:scale(1.05,1.05);
 }
 
 .libroUnoUno div, .libroDosDos div, .libroTresTres div, .libroCuatroCuatro div, .libroCincoCinco div, .libroSextoSexto div{
