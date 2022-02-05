@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family:'Roboto', sans-serif;;
+}
+
+/*Trabajo del header con su barra de navegación, y su barra de secciones*/
+
+header {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 1vh;
+    background-color: rgba(202, 202, 202, 0.411);
+    ;
+}
+
+header .navSup {
+    height: 1vh;
+    display: grid;
+    grid-template-columns: 2fr 7fr 1fr;
+    align-items: center;
+    padding-left:2vw;
+    padding-top: 1vh;
+}
+
+header .navSup .fotoLogo{
+    width:15vw;
+}
+
+header .navSup .buscador{
+    height: 4.5vh;
+    width: 40vw;
+}
+
+.miCuenta{
+    box-shadow: -1px 1px 5px rgb(179, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    margin-right: 1vw;
+    border-width: 1px;
+
+    background-color: #fff;
+}
+
+header .navInf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+}
+
+/*cuerpo entero con sus galerias*/
+main {
+    background-color: rgb(184, 184, 184);
+}
+
+section {
+    padding-top: 10vh;
+    padding-left: 2vw;
+    grid-template-rows: 50% 50%;
+    padding-bottom: 20vh;
+}
+
+/*galeria de mas vendidos*/
+
+section .masVend{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo titulo titulo titulo"
+    "primero segundo tercero cuarto quinto sexto"
+    ;
+    margin-bottom: 20vh;
+}
+
+.tituloSeccion{
+    grid-area: titulo;
+    font-size: 32px;
+    font-weight: 800;
+    padding-bottom: 2vh;
+    text-shadow:-1px 1px 5px gray;
+}
+
+.libroUno{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: primero;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+.libroDos{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: segundo;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+.libroTres{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: tercero;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+.libroCuatro{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: cuarto;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+.libroCinco{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: quinto;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+.libroSeis{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area: sexto;
+    background-color: whitesmoke;
+    justify-self: center;
+    height: 65vh;
+}
+
+.libroUno div, .libroDos div, .libroTres div, .libroCuatro div, .libroCinco div, .libroSeis div{
+    padding-left: 0.5vh;
+}
+/*galeria de ultimas ofertas*/
+
+.ultimasOfertas {
+    display: grid;
+    grid-template-areas: 
+    "tituloDos tituloDos tituloDos tituloDos tituloDos tituloDos"
+    "primeroDos segundoDos terceroDos cuartoDos quintoDos sextoDos";
+}
+
+.tituloDos{
+    grid-area:tituloDos;
+    font-size: 32px;
+    font-weight: 800;
+    padding-bottom: 2vh;
+    text-shadow:-1px 1px 5px gray;
+}
+.botonDos{
+    grid-area:botonDos;
+}
+.libroUnoUno{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:primeroDos;
+    background-color: whitesmoke;
+    justify-self: center;
+}
+.libroDosDos{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:segundoDos;
+    background-color: whitesmoke;
+    justify-self: center;
+}
+.libroTresTres{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:terceroDos;
+    background-color: whitesmoke;
+    justify-self: center;
+}
+.libroCuatroCuatro{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:cuartoDos;
+    background-color: whitesmoke;
+    justify-self: center;
+}
+.libroCincoCinco{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:quintoDos;
+    background-color: whitesmoke;
+    height: 65vh;
+    justify-self: center;
+}
+
+.libroSextoSexto{
+    box-shadow: -2px 2px 5px rgba(128, 128, 128, 0.89);
+    grid-area:sextoDos;
+    background-color: whitesmoke;
+    justify-self: center;
+}
+
+.libroUnoUno div, .libroDosDos div, .libroTresTres div, .libroCuatroCuatro div, .libroCincoCinco div, .libroSextoSexto div{
+    padding-left: 0.5vh;
+}
+
+/*footer */
+footer{
+    padding:1vh 0 2vh 2vw
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+}
